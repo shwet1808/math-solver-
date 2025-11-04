@@ -82,8 +82,9 @@ function App() {
             onChange={(e) => setQuestion(e.target.value)}
             placeholder="e.g., How many 4-letter words can be formed from 'MATH' without repetition?"
             rows={4}
+            aria-label="Enter your math question"
+            disabled={loading}
           />
-          <br />
           <button type="submit" disabled={loading}>
             {loading ? "Thinking..." : "Get Step-by-Step Answer"}
           </button>
